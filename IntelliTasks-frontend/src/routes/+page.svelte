@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    let tasks = ['element1', 'element2', 'element3'];
+</script>
+
+<main>
+    <ul>
+        {#each tasks as task}
+            <li>{task}</li>
+        {/each}
+    </ul>
+</main>
